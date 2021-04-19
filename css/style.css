@@ -45,10 +45,11 @@ main{
 }
 
 aside{
-    position: relative;
+    display: flex;
+    flex-direction: column;
     float:left;
     width:200px;
-    height:100%;
+    height: calc(100vh - 90px);
     background-color: #000000;
     overflow-y: hidden;
 }
@@ -90,7 +91,7 @@ aside > .nav-bar{
     cursor: pointer;
  }
 .playlist{
-    height:300px;
+    height: 100%;
     width:100%;
     overflow-y: auto;
 }
@@ -112,9 +113,8 @@ aside > .nav-bar{
     background-color:#A3A3A3 ;
 }
 .account-access{
-    position:absolute;
-    bottom:0;
     width:100%;
+    background-color: black;
     padding:5px 10px;
 }
 .account-access .install > img{
@@ -171,6 +171,7 @@ section{
     color:#616161;
     font-weight: 700; 
 }
+
 .list-inline  .active{
     border-bottom:3px solid #AAFA2E ;
 }
@@ -182,23 +183,23 @@ section{
 }
 .item-content{
     text-align: center;
-    width:200px;
+    width:calc(100% / 6);
 }
 .item-content img{
     margin-top:20px;
     margin-bottom:10px;
     height:180px;
 }
-
+.circle{
+    border-radius: 50%;
+}
 
 
 .recently,
 .createforyou,
-.artists{
-   
+.artists{  
     width:100%;
     padding:20px;
-    border-bottom:3px solid black;
 }
 .title-grey{
     margin:10px 0;
