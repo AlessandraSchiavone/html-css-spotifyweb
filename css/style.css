@@ -59,25 +59,23 @@ aside #logo{
     padding:10px;   
 }
 aside > .nav-bar{
+    height:100px;
+    width:100%;
     margin-bottom:15px;
 }
-
 .list-block{
     list-style: none;
     font-size: 14px;
     font-weight: 600;
 }
+
 .list-block > li{
     padding: 5px 10px ;
 }
-.list-block > li :hover{
-   color:white;
-   cursor: pointer;
-}
-.list-block > .active{
+.nav-bar .list-block > .active{
     border-left: 3px solid #AAFA2E;
 }
-.list-block li > img{
+.nav-bar .list-block li > img{
     height:25px;
     line-height:25px;
     vertical-align: middle;
@@ -87,15 +85,20 @@ aside > .nav-bar{
     vertical-align: middle;
     color: #616161;
 }
+.list-block > li :hover{
+    color:white;
+    cursor: pointer;
+ }
+.playlist{
+    height:300px;
+    width:100%;
+    overflow-y: auto;
+}
 .playlist h5{
     padding: 5px 10px;
     text-transform: uppercase;
 }
-.add-playlist {
-    height:400px;
-    overflow-y: auto;
-}
-.add{
+.add-playlist .add{
     display: inline-block;
     height:35px;
     width:35px;
@@ -155,19 +158,51 @@ section{
     overflow-y: auto;
 }
 
-section > .nav-bar{
-    height: 60px;
-    background-color: sandybrown;
+.mainav-bar{
+    text-align: center;
 }
+
+.mainav-bar .list-inline >li {
+    line-height:60px;
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+    padding:5px;
+    color:#616161;
+    font-weight: 700; 
+}
+.list-inline  .active{
+    border-bottom:3px solid #AAFA2E ;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+}
+.item-content{
+    text-align: center;
+    width:200px;
+}
+.item-content img{
+    margin-top:20px;
+    margin-bottom:10px;
+    height:180px;
+}
+
 
 
 .recently,
 .createforyou,
 .artists{
-    height:300px;
+   
     width:100%;
-    background-color: thistle;
+    padding:20px;
     border-bottom:3px solid black;
+}
+.title-grey{
+    margin:10px 0;
+    color:#616161;
 }
 
 
