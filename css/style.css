@@ -148,6 +148,7 @@ aside > .nav-bar{
 }
 .account-access .install:hover{
     color:white;
+    cursor:pointer;
 }
 
 .account-foto{
@@ -323,7 +324,7 @@ footer{
 }
 .icon-like i:hover{
     cursor: pointer;
-    color:white;
+    color:white; 
 }
 /*footer right*/
 .footer-right .icon{
