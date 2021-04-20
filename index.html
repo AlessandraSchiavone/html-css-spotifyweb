@@ -11,38 +11,43 @@
         <title>My Spotify</title>
     </head>
     <body>
+        <!-- button fixed -->
         <header>
                 <button class="btn-upgrade">
                      effettua l'upgrade
                  </button>
         </header>
+        <!-- /button fixed -->
         <!-- main --> 
         <main class="clearfix">
+        <!-- barra laterale -->
             <aside>
-                    <div id="logo">
-                        <img class="logo-big" src="img/logo.svg" alt="Logo Spotify">
-                        <img class="logo-small" src="img/logo-small.svg" alt="">
-                    </div>
-                    <div class="nav-bar">
-                        <ul class="list-block">
-                            <li class="active">
-                                <img src="img/home.svg" alt=""> 
-                                <span>Home</span>    
-                            </li>
-                            <li>
-                                <img src="img/search.svg" alt="">
-                                <span>Cerca</span>
-                            </li>
-                            <li>
-                                <img src="img/libreria.svg" alt=""> 
-                                <span>La tua libreria</span>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- logo -->
+                <div id="logo">
+                    <img class="logo-big" src="img/logo.svg" alt="Logo Spotify">
+                    <img class="logo-small" src="img/logo-small.svg" alt="">
+                </div>
+                <!-- nav-bar -->
+                <div class="nav-bar">
+                    <ul class="list-block">
+                        <li class="active">
+                            <img src="img/home.svg" alt=""> 
+                            <span>Home</span>    
+                        </li>
+                        <li>
+                            <img src="img/search.svg" alt="">
+                            <span>Cerca</span>
+                        </li>
+                        <li>
+                            <img src="img/libreria.svg" alt=""> 
+                            <span>La tua libreria</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- playlist -->
                 <div class="playlist">
                     <h5>Playlist</h5>
-                    <div class="add-playlist">
-                    <ul class="list-block">
+                        <ul class="list-block">
                             <li>
                             <div class="add">&plus;</div>
                             <span>Crea Playlist</span></li>
@@ -68,23 +73,24 @@
                                 <span>Nome Playlist</span>
                             </li>     
                         </ul>     
-                    </div>
                 </div>
+                <!-- account -->
                     <div class="account-access">
-                            <div class="install">
-                                <img src="img/download.svg" alt="">
-                                <span>Install app</span>
-                            </div>
-                            <div class="account-foto">
-                                <img src="img/profile.svg" alt="">
-                            </div>
-                            <span class="account-name">
-                                John Doe
-                            </span>
+                        <div class="install">
+                            <img src="img/download.svg" alt="">
+                            <span>Install app</span>
+                        </div>
+                        <div class="account-foto">
+                            <img src="img/profile.svg" alt="">
+                        </div>
+                        <span class="account-name">
+                                Alessandra Schiavone
+                        </span>
                     </div>
             </aside>
-                
+        <!--/ barra laterale -->        
             <section>
+                <!-- barra orizzontale -->
                 <div class="mainav-bar">
                     <ul class="list-inline">
                         <li class="active">In evidenza</li>
@@ -95,15 +101,17 @@
                         <li>scopri</li>
                     </ul>
                 </div>
+                <!-- /barra orizzontale -->
+                <!-- album -->
                 <div class="recently">
                     <h2>Recently played</h2>
                         <div class="container">
-                             <div class="item-content">
+                            <div class="item-content">
                                  <div class="item-image">
                                     <img src="img/metal_lifting.jpg" alt="">
                                     <div class="overlay">
                                         <span class="on"><i class="far fa-play-circle"></i></span>  
-                                        </div> 
+                                    </div> 
                                  </div>
                                  <h4>Heavy Metal</h4>
                                  <h5 class="title-grey">Subtitle</h5>   
@@ -113,7 +121,7 @@
                                     <img src="img/stranger.jpeg" alt="">
                                     <div class="overlay">
                                         <span class="on"><i class="far fa-play-circle"></i></span>  
-                                        </div> 
+                                    </div> 
                                  </div>
                                 <h4>Stranger Things, Vol.1(a netflix Original Series Soundtrack)</h4>
                                 <h5 class="title-grey">Kyle Dixon &amp; Micheal Stein</h5>
@@ -123,7 +131,7 @@
                                     <img src="img/aquietplace.jpeg" alt="">
                                     <div class="overlay">
                                         <span class="on"><i class="far fa-play-circle"></i></span>  
-                                        </div> 
+                                    </div> 
                                  </div>
                                 <h4>A quiet place</h4>
                                 <h5 class="title-grey">Subtitle</h5>
@@ -133,7 +141,7 @@
                                     <img src="img/split.jpeg" alt="">
                                     <div class="overlay">
                                         <span class="on"><i class="far fa-play-circle"></i></span>  
-                                        </div> 
+                                    </div> 
                                  </div>
                                 <h4>Split</h4>
                                 <h5 class="title-grey">Subtitle</h5>
@@ -143,7 +151,7 @@
                                     <img src="img/cure.jpeg" alt="">
                                     <div class="overlay">
                                         <span class="on"><i class="far fa-play-circle"></i></span>  
-                                        </div> 
+                                    </div> 
                                  </div>
                                 <h4>A cure for wellness</h4>
                                 <h5 class="title-grey">Subtitle</h5>
@@ -153,15 +161,17 @@
                                     <img src="img/sinister.jpeg" alt="">
                                     <div class="overlay">
                                         <span class="on"><i class="far fa-play-circle"></i></span>  
-                                        </div> 
+                                    </div> 
                                  </div>
                                 <h4>Sinister</h4>
                                 <h5 class="title-grey">Subtitle</h5>
                             </div>
-                         </div>
-                </div>
+                        </div>
+            </div>
+                <!--/album -->
+                <!-- suggerimenti -->
                 <div class="createforyou">
-                        <h2>Creato per John Doe</h2>
+                        <h2>Creato per Alessandra</h2>
                         <h5 class="title-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h5>
                         <div class="container">
                             <div class="item-content">
@@ -174,7 +184,9 @@
                             </div>
                         </div>
                 </div>
-                     <div class="artists">
+                <!--/suggerimenti -->
+                <!-- artisti -->
+                <div class="artists">
                         <h2>Artisti pi&ugrave; popolari</h2>
                         <h5 class="title-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h5>
                         <div class="container">
@@ -186,15 +198,16 @@
                                 <img class="circle" src="img/einaudi.jpeg" alt="">
                                 <h4>Ludovico Einaudi</h4>   
                             </div>
-                            </div>
-                     </div>
-    
+                        </div>
+                </div>
+                <!-- /artisti -->
             </section> 
         </main>
         <!-- /main -->
         <!-- footer -->
         <footer>
-            <div class="song-detail">
+            <!-- footer left -->
+            <div class="footer-left">
                 <div class="album">
                     <img src="img/sinister.jpeg" alt="">
                 </div>
@@ -207,7 +220,9 @@
                     <i class="far fa-folder"></i>
                 </div>
             </div>
-            <div class="play-bar">
+            <!--/footer left -->
+            <!-- footer center -->
+            <div class="footer-center">
                 <div class="icon">
                     <i class="fas fa-random"></i>
                     <i class="fas fa-step-backward"></i>
@@ -226,9 +241,10 @@
                     </div>
                     <div class="time">4:35</div>
                 </div>
-
+            <!-- /footer center -->
             </div>
-            <div class="audio">
+            <!-- footer right -->
+            <div class="footer-right">
                 <div class="icon">
                     <i class="fas fa-list"></i>
                     <i class="fas fa-tv"></i>
@@ -241,6 +257,7 @@
                     </span></div>  
                 </div>
             </div>
+            <!-- /footer right -->
         </footer>
         <!-- /footer -->
     </body>
