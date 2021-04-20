@@ -234,6 +234,10 @@ section{
     margin-top:20px;
     margin-bottom:10px;
 }
+.createforyou .item-content img,
+.artists .item-content img{
+    margin-bottom:10px;
+}
 
 /*effetto hover*/
 .overlay {
@@ -406,7 +410,6 @@ footer{
     font-size: 12px;
     font-weight: 600;
     text-align: center;
-    width:15%;
 }
 
 
