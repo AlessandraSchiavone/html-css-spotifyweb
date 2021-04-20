@@ -169,7 +169,8 @@ section{
     align-content: space-around;
 }
 
-.mainav-bar .list-inline >li {
+.mainav-bar .list-inline > li {
+    position: relative;
     line-height:60px;
     display: inline;
     list-style: none;
@@ -182,9 +183,17 @@ section{
     color:white;
     cursor: pointer;
 }
-.list-inline  .active{
-    border-bottom:3px solid #AAFA2E ;
+
+.list-inline .active:after{
+    content: "";
+    background-color: #AAFA2E;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    height: 2px;
+    width: 35%;
 }
+
 .container{
     display:flex;
     flex-wrap: wrap;
@@ -238,7 +247,7 @@ footer{
 }
 .song-detail .album >img{
     width:100%; 
-   padding: 5px;
+    padding: 5px;
 }
 .song-detail .name-album{
     padding: 5px;
@@ -249,12 +258,21 @@ footer{
     font-weight: 600;
     font-size:14px;
 }
-.song-detail .icon {
+.song-detail .name-album .title-grey:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.song-detail .icon-like {
     width:25%;
 }
-.song-detail .icon i{
+.song-detail .icon-like i{
     color:#616161;
     padding:0 2px;
+}
+.icon-like i:hover{
+    cursor: pointer;
+    color:white;
 }
 
 .audio .icon{
@@ -262,7 +280,7 @@ footer{
     color:white;
 }
 .audio .icon i{
-    font-size: 13px;
+    font-size: 14px;
     padding:0 2px;
 }
  .bar{
@@ -288,22 +306,19 @@ footer{
     
 }
 .icon{
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:5px;
-    width:100%;
-    
+    align-content: center;
+    width:50%;
+    margin:0 auto;
 }
 .play-bar .icon > i{
+    width:15%;
     color:white;
-    font-size: 18px;
-    padding:0px 15px;
 }
-.play-bar .icon .fa-play-circle{
-    vertical-align: middle;
-    font-size: 35px;
-}
+
 .play{
     display: flex;
     flex-direction: row;
@@ -314,20 +329,24 @@ footer{
 .play .time{
     color:white;
     display: inline;
-    width:5%;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    width:15%;
 }
 .circle-bar{
-    display: none; 
+    visibility: hidden;
     position:absolute;
     right:0;
     bottom: -6px;
 }
 .bar:hover .bar2{
-    background-color: lime;
+    cursor: pointer;
+    background-color: #AAFA2E;
 }
 .bar:hover .circle-bar{
-    display: inline;
-    cursor: pointer;
+    visibility: visible;
+    
 }
 .circle-bar > i{
     font-size:12px;
@@ -382,17 +401,39 @@ footer{
     .item-content h4{
         font-size:14px;
     }
-   
+    .icon{
+        width:90%;
+    }
+    .play-bar .icon > i{
+        width:20%;
+    }
+    .audio .icon i{
+        font-size: 12px;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 561px) and (max-width: 768px) {
     .item-content{
         width:calc(100% / 2);
     }
+    .icon{
+        width:90%;
+    }
+    .play-bar .icon > i{
+        width:20%;
+    }
+   
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .item-content{
         width:calc(100% / 4);
     }
-  
+    .icon{
+        width:90%;
+    }
+    .play-bar .icon > i{
+        width:20%;
+    }
+
+   
 }
