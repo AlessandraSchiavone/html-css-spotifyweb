@@ -14,12 +14,12 @@ body{
 header{
     position:fixed;
     top:0;
-    left:0;
-    width:100%;
+    right:0;
+    width:calc(100% - 200px);
     height:90px;
     line-height: 90px;
     text-align: right;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index:2;
 }
 .btn-upgrade{
@@ -48,7 +48,7 @@ aside{
     display: flex;
     flex-direction: column;
     float:left;
-    width:200px;
+    width:230px;
     height: calc(100vh - 90px);
     background-color: #000000;
     overflow-y: hidden;
@@ -58,6 +58,9 @@ aside #logo{
     line-height: 90px;
     height:90px;
     padding:10px;   
+}
+.logo-small{
+    display: none;
 }
 aside > .nav-bar{
     height:100px;
@@ -160,6 +163,10 @@ section{
 
 .mainav-bar{
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
 }
 
 .mainav-bar .list-inline >li {
@@ -171,29 +178,33 @@ section{
     color:#616161;
     font-weight: 700; 
 }
-
+.list-inline >li:hover{
+    color:white;
+    cursor: pointer;
+}
 .list-inline  .active{
     border-bottom:3px solid #AAFA2E ;
 }
 .container{
     display:flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: space-around; 
 
 }
 .item-content{
     text-align: center;
+    padding:10px;
     width:calc(100% / 6);
 }
 .item-content img{
     margin-top:20px;
     margin-bottom:10px;
-    height:180px;
-}
+    width:100%;
+    
+} 
 .circle{
     border-radius: 50%;
 }
-
 
 .recently,
 .createforyou,
@@ -214,18 +225,174 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-.song-detail{
-    width: 100%;
+.song-detail,
+.audio{ 
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:230px;
     height: 100%;
-    background-color: seagreen;
+}
+.song-detail .album{
+    width:25%;
+}
+.song-detail .album >img{
+    width:100%; 
+   padding: 5px;
+}
+.song-detail .name-album{
+    padding: 5px;
+    width:50%;
+    color:white;
+}
+.song-detail .name-album .title-grey{
+    font-weight: 600;
+    font-size:14px;
+}
+.song-detail .icon {
+    width:25%;
+}
+.song-detail .icon i{
+    color:#616161;
+    padding:0 2px;
+}
+
+.audio .icon{
+    width:30%; 
+    color:white;
+}
+.audio .icon i{
+    font-size: 13px;
+    padding:0 2px;
+}
+ .bar{
+    width:70%;
+    height: 3px;
+    margin:0px 10px;
+    background-color: #616161;
+    border-radius: 15px;
+}
+ .bar2{
+    position: relative;
+    width:25%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: lightgray;
 }
 .play-bar{
-    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width:40%;
     height: 100%;
-    background-color: steelblue;
+    
 }
-.audio{
-    width: 100%;
-    height: 100%;
-    background-color: tan;
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5px;
+    width:100%;
+    
+}
+.play-bar .icon > i{
+    color:white;
+    font-size: 18px;
+    padding:0px 15px;
+}
+.play-bar .icon .fa-play-circle{
+    vertical-align: middle;
+    font-size: 35px;
+}
+.play{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.play .time{
+    color:white;
+    display: inline;
+    width:5%;
+}
+.circle-bar{
+    display: none; 
+    position:absolute;
+    right:0;
+    bottom: -6px;
+}
+.bar:hover .bar2{
+    background-color: lime;
+}
+.bar:hover .circle-bar{
+    display: inline;
+    cursor: pointer;
+}
+.circle-bar > i{
+    font-size:12px;
+    color:white;
+}
+
+
+
+
+
+@media screen and (max-width: 560px) {
+    header{
+        width:calc(100% - 50px);
+    }
+
+   .logo-big{
+       display: none;
+   }
+   .logo-small{
+      display: block;
+    }
+    aside #logo {
+        width: 50px; 
+        height:60px;
+    }
+    aside{
+        width:50px;
+    }
+    aside img{
+        width:100%;
+        height:50px;
+    }
+    aside span,
+    aside h5,
+    .add-playlist .add{
+        display: none;
+    }
+    .account-foto{
+        margin:10px 0;
+    }
+    .nav-bar .list-block > .active,
+    .account-access .install {
+        border: none;
+    }
+    .song-detail,
+    .audio{
+        width:29%;
+    }
+    .item-content{
+        width:calc(100% / 2);
+    }
+    .item-content h4{
+        font-size:14px;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .item-content{
+        width:calc(100% / 2);
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .item-content{
+        width:calc(100% / 4);
+    }
+  
 }

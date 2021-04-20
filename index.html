@@ -12,15 +12,16 @@
     </head>
     <body>
         <header>
-            <button class="btn-upgrade">
-                effettua l'upgrade
-            </button>
+                <button class="btn-upgrade">
+                     effettua l'upgrade
+                 </button>
         </header>
         <!-- main --> 
         <main class="clearfix">
-                <aside>
+            <aside>
                     <div id="logo">
-                        <img src="img/logo.svg" alt="Logo Spotify">
+                        <img class="logo-big" src="img/logo.svg" alt="Logo Spotify">
+                        <img class="logo-small" src="img/logo-small.svg" alt="">
                     </div>
                     <div class="nav-bar">
                         <ul class="list-block">
@@ -81,75 +82,135 @@
                                 John Doe
                             </span>
                     </div>
-                </aside>
+            </aside>
                 
-                 <section>
-                     <div class="mainav-bar">
-                        <ul class="list-inline">
-                            <li class="active">In evidenza</li>
-                            <li>Podcast</li>
-                            <li>Classifiche</li>
-                            <li>Generi e mood</li>
-                            <li>nuove uscite </li>
-                            <li>scopri</li>
-                        </ul>
-                     </div>
-                     <div class="recently">
-                         <h2>Recently played</h2>
-                         <div class="container">
+            <section>
+                <div class="mainav-bar">
+                    <ul class="list-inline">
+                        <li class="active">In evidenza</li>
+                        <li>Podcast</li>
+                        <li>Classifiche</li>
+                        <li>Generi e mood</li>
+                        <li>nuove uscite </li>
+                        <li>scopri</li>
+                    </ul>
+                </div>
+                <div class="recently">
+                    <h2>Recently played</h2>
+                        <div class="container">
                              <div class="item-content">
                                  <img src="img/metal_lifting.jpg" alt="">
-                                 <h3>Heavy Metal</h3>
+                                 <h4>Heavy Metal</h4>
                                  <h5 class="title-grey">Subtitle</h5>
                              </div>
                              <div class="item-content">
                                 <img src="img/stranger.jpeg" alt="">
-                                <h3>Stranger Things, Vol.1(a netflix Original Series Soundtrack)</h3>
+                                <h4>Stranger Things, Vol.1(a netflix Original Series Soundtrack)</h4>
                                 <h5 class="title-grey">Kyle Dixon &amp; Micheal Stein</h5>
                             </div>
                             <div class="item-content">
                                 <img src="img/aquietplace.jpeg" alt="">
-                                <h3>A quiet place</h3>
+                                <h4>A quiet place</h4>
                                 <h5 class="title-grey">Subtitle</h5>
                             </div>
                             <div class="item-content">
                                 <img src="img/split.jpeg" alt="">
-                                <h3>Split</h3>
+                                <h4>Split</h4>
                                 <h5 class="title-grey">Subtitle</h5>
                             </div>
                             <div class="item-content">
                                 <img src="img/cure.jpeg" alt="">
-                                <h3>A cure for wellness</h3>
+                                <h4>A cure for wellness</h4>
                                 <h5 class="title-grey">Subtitle</h5>
                             </div>
                             <div class="item-content">
                                 <img src="img/sinister.jpeg" alt="">
-                                <h3>Sinister</h3>
+                                <h4>Sinister</h4>
                                 <h5 class="title-grey">Subtitle</h5>
                             </div>
                          </div>
-
-                     </div>
-                     <div class="createforyou">
+                </div>
+                <div class="createforyou">
                         <h2>Creato per John Doe</h2>
                         <h5 class="title-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h5>
-                     </div>
+                        <div class="container">
+                            <div class="item-content">
+                                <img src="img/radar.jpeg" alt="">
+                                <h4>Release Radar</h4>
+                            </div>
+                            <div class="item-content">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <h4>Daily Mix 1</h4>   
+                            </div>
+                        </div>
+                </div>
                      <div class="artists">
                         <h2>Artisti pi&ugrave; popolari</h2>
                         <h5 class="title-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h5>
+                        <div class="container">
+                            <div class="item-content ">
+                                <img class="circle" src="img/youg.jpeg" alt="">
+                                <h4>Lana del Rey</h4>
+                            </div>
+                            <div class="item-content ">
+                                <img class="circle" src="img/einaudi.jpeg" alt="">
+                                <h4>Ludovico Einaudi</h4>   
+                            </div>
+                            </div>
                      </div>
     
-                </section> 
-            </main>
-            <!-- /main -->
-    
-
+            </section> 
+        </main>
+        <!-- /main -->
         <!-- footer -->
         <footer>
-            <div class="song-detail"></div>
-            <div class="play-bar"></div>
-            <div class="audio"></div>
+            <div class="song-detail">
+                <div class="album">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+                <div class="name-album">
+                   <h5>Sinister</h5>  
+                   <span class="title-grey">Brano Nome</span>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+            <div class="play-bar">
+                <div class="icon">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="play"> 
+                    <div class="time">0:25</div>
+                    <div class="bar">
+                       <div class="bar2">
+                        <span class="circle-bar">
+                            <i class="fas fa-circle"></i>
+                        </span>
+                       </div>   
+                    </div>
+                    <div class="time">4:35</div>
+                </div>
 
+            </div>
+            <div class="audio">
+                <div class="icon">
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="bar">
+                    <div class="bar2">
+                        <span class="circle-bar">
+                        <i class="fas fa-circle"></i>
+                    </span></div>  
+                </div>
+            </div>
         </footer>
         <!-- /footer -->
     </body>
