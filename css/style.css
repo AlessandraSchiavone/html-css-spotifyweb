@@ -328,7 +328,7 @@ footer{
 }
 .footer-right .icon i{
     font-size:14px;
-    padding:0 2px;
+    padding:0 7px;
 }
 /*decorazione barra*/
 .bar{
@@ -466,6 +466,7 @@ footer{
     }
     .footer-right .icon i{
         font-size: 12px;
+        padding:0 2px;
     }
     .mainav-bar{
         width:100%;
