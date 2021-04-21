@@ -16,7 +16,7 @@ header{
     position:fixed;
     top:0;
     right:0;
-    width:calc(100% - 200px);
+    width:calc(100% - 230px);
     height:90px;
     line-height: 90px;
     text-align: right;
@@ -195,6 +195,7 @@ section{
     padding:5px;
     color:#616161;
     font-weight: 700; 
+    font-size: 16px;
 }
 .list-inline >li:hover{
     color:white;
@@ -224,7 +225,7 @@ section{
 
 .item-content{
     text-align: center;
-    padding:10px;
+    padding: 0 5px;
     width:calc(100% / 6);
 }
 .item-content img{
@@ -233,10 +234,6 @@ section{
 .item-image{
     position:relative;
     margin-top:20px;
-    margin-bottom:10px;
-}
-.createforyou .item-content img,
-.artists .item-content img{
     margin-bottom:10px;
 }
 
@@ -249,13 +246,16 @@ section{
     right: 0;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
     background-color: black;
   }
 .item-image:hover .overlay {
-    opacity: 0.4;
+    opacity: 0.5;
     cursor: pointer;
 }
+.artists .item-image:hover .overlay{
+    border-radius: 50%;
+}
+
 .on{
    position: absolute;
    top:50%;
@@ -345,7 +345,7 @@ footer{
 }
 .bar2{
     position: relative;
-    width:25%;
+    width:30%;
     height:100%;
     border-radius:15px;
     background-color: lightgray;
@@ -372,7 +372,7 @@ footer{
 /*footer center*/
 .footer-center{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     flex-direction:column;
     width:40%;
     height:100%; 
@@ -392,12 +392,11 @@ footer{
     color:white;
 }
 .footer-center .icon > .fa-play-circle:hover{
-    font-size:32.5px;
+    font-size: 32.5px;
     cursor: pointer;
 }
 /*barra canzoni*/
 .play{
-    margin-bottom:5px;
     display: flex;
     flex-direction:row;
     justify-content:center;
@@ -418,7 +417,7 @@ footer{
 /*media query*/
 
 /*xs*/
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 320px) {
     header{
         width:calc(100% - 50px);
     }
@@ -459,7 +458,80 @@ footer{
     .item-content{
         width:calc(100% / 2);
     }
-    .item-content h4{
+    .item-content h3{
+        font-size:14px;
+    } 
+    .name-album,
+    .footer-left .name-album .title-grey{
+        font-size: 12px;
+    }
+    .icon{
+        width:90%;
+    }
+    .footer-center .icon > i{
+        width:20%;
+    }
+    .footer-center .icon > i{
+        font-size: 18px;
+    }
+    .footer-center .icon > .fa-play-circle:hover{
+        font-size: 18.5px;
+    }
+    .footer-right .icon i{
+        font-size:10px;
+        padding:0 2px;
+    }
+    .mainav-bar{
+        width:100%;
+    }
+    .recently,
+    .createforyou,
+    .artists{
+        padding:10px;
+    } 
+}
+@media screen and (min-width: 321px) and (max-width:560px) {
+    header{
+        width:calc(100% - 50px);
+    }
+
+   .logo-big{
+     display: none;
+   }
+   .logo-small{
+     display: block;
+    }
+    aside{
+        width:50px;
+    }
+    aside #logo {
+        width:50px; 
+        height:60px;
+    }
+    aside img{
+        width:100%;
+        height:50px;
+    }
+    aside span,
+    aside h5,
+    .add-playlist .add{
+        display: none;
+    }
+    .account-foto{
+        margin:10px 0;
+    }
+    .nav-bar .list-block > .active,
+    .account-access .install {
+        border: none;
+    }
+    .footer-left,
+    .footer-right{
+        width:29%;
+    }
+    .item-content{
+        width:calc(100% / 2);
+    }
+    .item-content h3{
         font-size:14px;
     }
     .icon{
@@ -468,6 +540,12 @@ footer{
     .footer-center .icon > i{
         width:20%;
     }
+    .footer-center .icon > .fa-play-circle{
+        font-size: 28px;
+    }
+    .footer-center .icon > .fa-play-circle:hover{
+        font-size: 28.5px;
+    }
     .footer-right .icon i{
         font-size: 12px;
         padding:0 2px;
@@ -475,6 +553,11 @@ footer{
     .mainav-bar{
         width:100%;
     }
+    .recently,
+    .createforyou,
+    .artists{
+        padding:10px;
+    } 
 }
 /*sm*/
 @media screen and (min-width: 561px) and (max-width: 768px) {
