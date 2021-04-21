@@ -315,17 +315,34 @@ footer{
     cursor: pointer;
 }
 /* icone */
-.footer-left .icon-like {
+.footer-left .icon-like,
+.footer-left .like {
     width:25%;
 }
 .footer-left .icon-like i{
     color:#616161;
     padding:0 2px;
 }
-.icon-like i:hover{
+.like:hover .far.fa-heart,
+.folder:hover .fa-folder{
     cursor: pointer;
-    color:white; 
+    display: none;
 }
+.like .fas.fa-heart,
+.folder .fa-folder-open{
+    display: none;
+} 
+.like:hover  .fas.fa-heart {
+    display: block;
+    cursor: pointer;
+    color:greenyellow; 
+} 
+.folder:hover .fa-folder-open{
+    display: block;
+    cursor: pointer;
+    color:white;
+}
+
 /*footer right*/
 .footer-right .icon{
     width:30%; 
@@ -484,6 +501,11 @@ footer{
     .mainav-bar{
         width:100%;
     }
+    .footer-right {
+       flex-direction: column;
+       justify-content: space-evenly;
+    }
+
     .recently,
     .createforyou,
     .artists{
