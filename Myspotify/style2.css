@@ -226,7 +226,7 @@ section{
 }
 
 .item-content{
-    text-align: center;
+    text-align:left;
     padding: 0 5px;
     width:calc(100% / 6);
 }
@@ -269,8 +269,11 @@ section{
   }
 
 /*versione rotonda*/
-.circle{
+ .circle {   
     border-radius: 50%;
+}
+.artists h4{
+    text-align: center;
 }
 .title-grey{
     margin:10px 0;
@@ -463,6 +466,9 @@ footer{
     .add-playlist .add{
         display: none;
     }
+    .playlist{
+        visibility: hidden;
+    }
     .account-foto{
         margin:10px 0;
     }
@@ -540,6 +546,9 @@ footer{
     aside h5,
     .add-playlist .add{
         display: none;
+    }
+    .playlist{
+        visibility: hidden;
     }
     .account-foto{
         margin:10px 0;
