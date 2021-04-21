@@ -213,11 +213,15 @@ section{
     width: 35%;
 }
 /*sezione album*/
-.recently,
-.createforyou,
-.artists{  
+#recently,
+#createforyou,
+#artists{  
     width:100%;
     padding:20px;
+}
+.list-block a{
+    text-decoration: none;
+    color:#616161;
 }
 .container{
     display:flex;
@@ -254,7 +258,7 @@ section{
     opacity: 0.5;
     cursor: pointer;
 }
-.artists .item-image:hover .overlay{
+#artists .item-image:hover .overlay{
     border-radius: 50%;
 }
 
@@ -272,7 +276,7 @@ section{
  .circle {   
     border-radius: 50%;
 }
-.artists h4{
+#artists h4{
     text-align: center;
 }
 .title-grey{
@@ -514,9 +518,9 @@ footer{
        justify-content: space-evenly;
     }
 
-    .recently,
-    .createforyou,
-    .artists{
+    #recently,
+    #createforyou,
+    #artists{
         padding:10px;
     } 
 }
@@ -586,9 +590,9 @@ footer{
     .mainav-bar{
         width:100%;
     }
-    .recently,
-    .createforyou,
-    .artists{
+    #recently,
+    #createforyou,
+    #artists{
         padding:10px;
     } 
 }
