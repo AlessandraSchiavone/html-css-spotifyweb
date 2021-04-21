@@ -112,7 +112,9 @@ aside > .nav-bar{
     padding: 5px 10px;
     text-transform: uppercase;
 }
-
+.playlist .list-block{
+    margin-bottom:20px;
+}
 .playlist .add{
     display: inline-block;
     height:35px;
@@ -315,14 +317,30 @@ footer{
     cursor: pointer;
 }
 /* icone */
-.footer-left .icon-like {
+.footer-left .icon-like,
+.footer-left .like {
     width:25%;
 }
 .footer-left .icon-like i{
     color:#616161;
     padding:0 2px;
 }
-.icon-like i:hover{
+.like:hover .far.fa-heart,
+.folder:hover .fa-folder{
+    cursor: pointer;
+    display: none;
+}
+.like .fas.fa-heart,
+.folder .fa-folder-open{
+    display: none;
+} 
+.like:hover  .fas.fa-heart {
+    display: block;
+    cursor: pointer;
+    color:greenyellow; 
+} 
+.folder:hover .fa-folder-open{
+    display: block;
     cursor: pointer;
     color:white;
 }
